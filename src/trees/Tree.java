@@ -1,6 +1,6 @@
 package trees;
 
-
+import decorations.Decoration;
 
 public interface Tree{
 Boolean hasStar();

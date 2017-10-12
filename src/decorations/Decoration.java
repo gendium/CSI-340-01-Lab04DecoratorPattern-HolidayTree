@@ -3,7 +3,7 @@ package decorations;
 import trees.Tree;
 
 public abstract class Decoration implements Tree {
-protected final Tree decoratedTree;
+protected Tree decoratedTree;
 public Decoration(Tree tree)
 {
 	this.decoratedTree = tree;
@@ -17,4 +17,6 @@ public String getDecorations()
 {
 	return decoratedTree.getDecorations();
 }
+
+
 }

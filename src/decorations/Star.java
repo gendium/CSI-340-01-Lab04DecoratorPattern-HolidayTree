@@ -4,18 +4,20 @@ import trees.Tree;
 
 public class Star extends Decoration{
 	public Star(Tree tree)
-	{
-//		if(tree.getDecorations().contains("Star"))
-//			{
-//				System.out.println("Tree already has a star");
-//				return;
-//			}
-		
+	{	
 		super(tree);
+		if(tree.getDecorations().contains("Star")) {
+			System.out.println("Tree already has Star");
+		}
 	}
 	public double getCost()
 	{
 		return super.getCost() + 4;
+	}
+	
+	public Star removeStar()
+	{
+		return this;
 	}
 	
 	public String getDecorations()
