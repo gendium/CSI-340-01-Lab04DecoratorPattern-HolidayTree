@@ -27,6 +27,7 @@
     </coordinates>
     <panel_attributes>Star
 --
+-checkForStar()
 +display()</panel_attributes>
     <additional_attributes/>
   </element>
