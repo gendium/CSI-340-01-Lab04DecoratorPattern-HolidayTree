@@ -8,16 +8,12 @@ public class Star extends Decoration{
 		super(tree);
 		if(tree.getDecorations().contains("Star")) {
 			System.out.println("Tree already has Star");
+			decoratedTree = null;
 		}
 	}
 	public double getCost()
 	{
 		return super.getCost() + 4;
-	}
-	
-	public Star removeStar()
-	{
-		return this;
 	}
 	
 	public String getDecorations()
