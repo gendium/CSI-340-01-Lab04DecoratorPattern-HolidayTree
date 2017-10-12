@@ -1,11 +1,20 @@
 package trees;
 
-public class BalsamFir extends Tree{
-	public BalsamFir()
-	{
-		type = "Balsam Fir";
-		cost = 5;
-		hasStar = false;
+public class BalsamFir implements Tree{
+
+	@Override
+	public Boolean hasStar() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
+	@Override
+	public double getCost() {
+		return 5;
+	}
+
+	@Override
+	public String getDecorations() {
+		return "Balsam Fir Tree decorated with ";
+	}
 }

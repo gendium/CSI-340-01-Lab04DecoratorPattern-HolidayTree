@@ -1,6 +1,20 @@
 package decorations;
 
-public abstract class Decoration {
-String name;
-double cost;
+import trees.Tree;
+
+public abstract class Decoration implements Tree {
+protected final Tree decoratedTree;
+public Decoration(Tree tree)
+{
+	this.decoratedTree = tree;
+}
+public double getCost()
+{
+	return decoratedTree.getCost();
+}
+
+public String getDecorations()
+{
+	return decoratedTree.getDecorations();
+}
 }

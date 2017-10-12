@@ -1,11 +1,20 @@
 package trees;
 
-public class FraserFir extends Tree{
-	public FraserFir()
-	{
-		type = "Fraser Fir";
-		cost = 12;
-		hasStar = false;
+public class FraserFir implements Tree{
+	@Override
+	public Boolean hasStar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getCost() {
+		return 12;
+	}
+
+	@Override
+	public String getDecorations() {
+		return "Fraser Fir Tree decorated with ";
 	}
 
 }

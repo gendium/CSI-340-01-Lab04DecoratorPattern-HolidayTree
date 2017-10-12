@@ -1,11 +1,21 @@
 package trees;
 
-public class DouglasFir extends Tree{
-	public DouglasFir()
+public class DouglasFir implements Tree{
+	@Override
+	public double getCost()
 	{
-		type = "Douglas Fir";
-		cost = 15;
-		hasStar = false;
+		return 15;
+	}
+	
+	@Override
+	public String getDecorations() {
+		return "Douglas Fir Tree decorated with ";
+	}
+
+	@Override
+	public Boolean hasStar() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
