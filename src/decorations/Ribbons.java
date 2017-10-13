@@ -6,19 +6,15 @@ public class Ribbons extends Decoration{
 
 	public Ribbons(Tree tree)
 	{
-		super(tree);
+		this.decoratedTree = tree;
 	}
-	public double getcost()
+	public double getCost()
 	{
-		return super.getCost() + 2;
+		return decoratedTree.getCost() + 2;
 	}
 	public String getDecorations()
 	{
-		return super.getDecorations() + ", Ribbons";
+		return decoratedTree.getDecorations() + ", Ribbons";
 	}
-	@Override
-	public Boolean hasStar() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 }

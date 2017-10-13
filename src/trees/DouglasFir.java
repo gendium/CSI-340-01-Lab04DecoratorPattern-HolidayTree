@@ -12,10 +12,5 @@ public class DouglasFir implements Tree{
 		return "Douglas Fir Tree decorated with ";
 	}
 
-	@Override
-	public Boolean hasStar() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }

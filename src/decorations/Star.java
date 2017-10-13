@@ -3,27 +3,31 @@ package decorations;
 import trees.Tree;
 
 public class Star extends Decoration{
+
+	boolean isDuplicate;
+
 	public Star(Tree tree)
-	{	
-		super(tree);
+	{
+		this.decoratedTree = tree;
+		isDuplicate = false;
 		if(tree.getDecorations().contains("Star")) {
-			System.out.println("Tree already has Star");
-			decoratedTree = null;
+			System.out.println("Tree already has Star!");
+			isDuplicate = true;
+
 		}
 	}
 	public double getCost()
 	{
-		return super.getCost() + 4;
+		if (isDuplicate)
+			return decoratedTree.getCost();
+		return decoratedTree.getCost() + 4;
 	}
 	
 	public String getDecorations()
 	{
-		return super.getDecorations() + ", Star";
-	}
-	@Override
-	public Boolean hasStar() {
-		// TODO Auto-generated method stub
-		return null;
+		if (isDuplicate)
+			return decoratedTree.getDecorations();
+		return decoratedTree.getDecorations() + ", Star";
 	}
 	
 }

@@ -5,6 +5,7 @@ public static void main(String[] args) {
 	Tree myTree = new FraserFir();
 	myTree = new Ruffles(myTree);
 	myTree = new Star(myTree);
+	myTree = new Star(myTree);
 	printTree(myTree);
 }
 public static void printTree(Tree myTree)

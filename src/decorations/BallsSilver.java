@@ -5,19 +5,15 @@ import trees.Tree;
 public class BallsSilver extends Decoration{
 	public BallsSilver(Tree tree)
 	{
-		super(tree);
+		this.decoratedTree = tree;
 	}
 	public double getCost()
 	{
-		return super.getCost() + 3;
+		return decoratedTree.getCost() + 3;
 	}
 	public String getDecorations()
 	{
-		return super.getDecorations() + ", Balls Silver";
+		return decoratedTree.getDecorations() + ", Balls Silver";
 	}
-	@Override
-	public Boolean hasStar() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 }

@@ -3,20 +3,9 @@ package decorations;
 import trees.Tree;
 
 public abstract class Decoration implements Tree {
-protected Tree decoratedTree;
-public Decoration(Tree tree)
-{
-	this.decoratedTree = tree;
-}
-public double getCost()
-{
-	return decoratedTree.getCost();
-}
+	protected Tree decoratedTree;
 
-public String getDecorations()
-{
-	return decoratedTree.getDecorations();
-}
-
+	public abstract double getCost();
+	public abstract String getDecorations();
 
 }
